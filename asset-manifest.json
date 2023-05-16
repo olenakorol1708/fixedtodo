@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fixedtodo/static/css/main.9afa8a67.css",
+    "main.js": "/fixedtodo/static/js/main.cbb9e120.js",
+    "static/js/787.b8fa26a9.chunk.js": "/fixedtodo/static/js/787.b8fa26a9.chunk.js",
+    "static/media/Pale Moon Over The City - 4K.mp4": "/fixedtodo/static/media/Pale Moon Over The City - 4K.f2ae9fe67a3de8233139.mp4",
+    "index.html": "/fixedtodo/index.html",
+    "main.9afa8a67.css.map": "/fixedtodo/static/css/main.9afa8a67.css.map",
+    "main.cbb9e120.js.map": "/fixedtodo/static/js/main.cbb9e120.js.map",
+    "787.b8fa26a9.chunk.js.map": "/fixedtodo/static/js/787.b8fa26a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9afa8a67.css",
+    "static/js/main.cbb9e120.js"
+  ]
+}
