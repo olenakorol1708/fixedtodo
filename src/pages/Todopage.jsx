@@ -23,8 +23,7 @@ export const Todopage = () => {
 
   const handleChange = (e) => {
     setItem(e.target.value);
-    console.log(item);
-    console.log(tasks);
+ 
   };
 
   const addItem = (e) => {
@@ -33,7 +32,7 @@ export const Todopage = () => {
       const newTask = { title: item };
       addToDoFetch(newTask);
       setItem("");
-      console.log(tasks);
+     
     } else {
       alert("Please enter a task.");
     }
@@ -42,7 +41,7 @@ export const Todopage = () => {
   async function addToDoFetch(newTask) {
     try {
       const result = await fetch(
-        "https://first-node-js-app-r.herokuapp.com/api/todos",
+        `${process.env.REACT_APP_MY_KEY}`,
         {
           method: "POST",
           headers: {

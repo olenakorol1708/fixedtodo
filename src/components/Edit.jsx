@@ -23,7 +23,7 @@ export const Edit = ({text,item,setText,isEdit,setIsEdit,tasks,setTasks, handleD
   }
   async function patchFetch(ID){
     try{
-      const response = await fetch(`https://first-node-js-app-r.herokuapp.com/api/todos/${ID}`,
+      const response = await fetch(`${process.env.REACT_APP_MY_KEY}/${ID}`,
       {
         method:'PATCH',
         headers:{
@@ -35,7 +35,8 @@ export const Edit = ({text,item,setText,isEdit,setIsEdit,tasks,setTasks, handleD
         })
       });
       const result =await response.json();
-       console.log(result)
+      return result;
+     
     }catch(err){console.log(err.message)}}
    
   return (

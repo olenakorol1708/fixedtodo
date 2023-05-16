@@ -12,16 +12,18 @@ export const Loginpage = () => {
 
   const passwordHandler = (e) => {
     setPassword(e.target.value);
-    console.log(e.target.value);
+    
+  
   };
   const emailHandler = (e) => {
     setEmail(e.target.value);
-    console.log(e.target.value);
+   
   };
 
   async function loginFetch(e) {
+  
     e.preventDefault();
-    console.log("----login----")
+    
     try {
       let info = {
         password: password,
@@ -29,7 +31,7 @@ export const Loginpage = () => {
       };
 
       const result = await fetch(
-        "https://first-node-js-app-r.herokuapp.com/api/auth/login",
+       "https://first-node-js-app-r.herokuapp.com/api/auth/login",
         {
           method: "POST",
           headers: {
@@ -39,7 +41,7 @@ export const Loginpage = () => {
         }
       );
       const data = await result.json();
-      console.log(data);
+      
       if (data.token) {
         localStorage.setItem("token", data.token);
         navigate("/todo");
